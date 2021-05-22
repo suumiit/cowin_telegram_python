@@ -148,7 +148,7 @@ while True:
                         if print_flag == 'y' or print_flag == 'Y':
                             # Printing each center
                             for center in resp_json["sessions"]:
-                                if (center["min_age_limit"]==age and center["available_capacity_dose2"]>0 and center["vaccine"]=="COVAXIN"):
+                                if (center["min_age_limit"]==age and center["available_capacity"]>0): #and center["vaccine"]=="COVAXIN"):
                                     print("\n")
                                     #if center["capacity"] > 0
                                     print("On{}".format(INP_DATE))
@@ -195,7 +195,7 @@ while True:
                                     #print('Sent')
                     else:
                         print("No available slots on {}".format(INP_DATE))
-    time.sleep(170)  #  Using 7 requests (for 7 days) in 1 second. 100 requests per 5 minutes allowed. You do the math.
+    time.sleep(170)
     #   timing the loop
     now = time.time()
     print("\n**********************************************************************\n "
