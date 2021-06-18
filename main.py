@@ -1,7 +1,7 @@
 """
 Created on Tue May  18 03:19:56 2021
 @author: Sumit Kumar
-insta:@suu_miits
+insta:@suu_miit
 """
 import json
 import requests
